@@ -1,7 +1,7 @@
 var sacha={
     nombre:"sacha",
     apellido:"Lopez",
-    edad:29,
+    edad:17,
     ingeniero:true,
     cocinero:false,
     cantante:false,
@@ -32,9 +32,14 @@ function imprimirProfesiones(persona) {
 }
 
 imprimirProfesiones(sacha)
+// var mayoriaDeEdad=18 es mejor en este caso usar consta porque el valor de la variable no debe variar
+consta MAYORIA_DE_EDAD=18
+function esMayorDeEdad(persona) {
+    return persona.edad>=MAYORIA_DE_EDAD
+}
 
 function imprimirSiEsMayorDeEdad(persona) {
-    if(persona.edad>=18) {
+    if( esMayorDeEdad(persona)) {
         console.log(` ${persona.nombre} es mayor de edad`)
     }
     else {
