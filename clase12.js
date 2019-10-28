@@ -6,12 +6,12 @@ var david={
 
 }
 console.log(`Al inicio del año ${david.nombre} pesa ${david.peso}KG`)
-nst INCREMENTO_PESO=200
+var INCREMENTO_PESO=0.2
 const aumentarDePeso= persona => persona.peso+=INCREMENTO_PESO
 const adelgazar= persona => persona.peso-=INCREMENTO_PESO
 
 for (var i=1; i<=365;i++) {
-    var random=math.random()
+    var random=Math.random()
     if (random<.25) {
         aumentarDePeso(david)
     }
@@ -20,4 +20,4 @@ for (var i=1; i<=365;i++) {
     }
 }
 
-console.log(`Al final del año ${david.nombre} pesa ${david.peso}KG`)
+console.log(`Al final del año ${david.nombre} pesa ${david.peso.toFixed(1)}KG`)
