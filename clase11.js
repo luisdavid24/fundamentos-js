@@ -54,7 +54,7 @@ function permitirAcceso(persona) {
     if (!esMayorDeEdad(persona))
     console.log("ACCESO DENEGADO")
 }
- const ES_LEGAL= (persona)=>{
+const ES_LEGAL= (persona)=>{
      if(!esMayorDeEdad(persona))
      console.log("Eres menor")
 
