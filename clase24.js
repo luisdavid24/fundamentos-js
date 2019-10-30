@@ -20,8 +20,17 @@ class Desarrollador extends persona{
     }
 }
 
+function responderSaludo(nombre,apellido,esDeV){
+    console.log(`Buen dia ${nombre} ${apellido}`)
+    if (esDeV){
+        console.log(`Ah mira, no sabía que eres desarrollador/a`)
+    }
+}
 
-// var david=new persona("david","lopez",1.7)
-// var pepe=new persona("pepe","armando",1.85)
-// var camila=new persona("camila","maraca",1.58)
+var david=new Desarrollador("david","lopez",1.7)
+var pepe=new persona("pepe","armando",1.85)
+var camila=new persona("camila","maraca",1.58)
 
+david.saludar()
+camila.saludar()
+pepe.saludar()
