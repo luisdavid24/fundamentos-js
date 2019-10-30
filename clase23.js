@@ -11,17 +11,15 @@ class persona{
         return this.altura>1.8
     }
 }
-
-
-
-function Desarrollador(nombre,apellido) {
-    this.nombre=nombre
-    this.apellido=apellido
+class Desarrollador extends persona{
+    constructor(nombre,apellido,altura) {
+        super(nombre,apellido,altura)
+    }
+    saludar(){
+        console.log( `Hola, me llamo ${this.nombre} ${this.apellido} y soy un desarrollador o desarrolladora ` )
+    }
 }
 
-Desarrollador.prototype.saludar=function(){
-    console.log( `Hola, me llamo ${this.nombre} ${this.apellido} y soy un desarrollador o desarrolladora ` )
-}
 
 // var david=new persona("david","lopez",1.7)
 // var pepe=new persona("pepe","armando",1.85)
