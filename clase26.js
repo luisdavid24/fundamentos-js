@@ -10,4 +10,6 @@ function obtenerPersonaje(id){
     $.get(url,opts, onPeopleResponse )
 }
 
-obtenerPersonaje(5)
+obtenerPersonaje(1)
+obtenerPersonaje(2)
+obtenerPersonaje(3)
