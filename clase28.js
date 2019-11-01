@@ -28,7 +28,5 @@ obtenerPersonaje(1,function(personaje){
     })
 })
 
-    
-    // if(callback){
-    //     callback()
-    // }
+   
+
