@@ -7,14 +7,13 @@ function obtenerPersonaje(id) {
     return new Promise((resolve,reject)=>{
         const url=`${API_URL}${PEOPLE_URL.replace(":id",id)}`
     $
-        .get(url,opts,function(){
-            
+        .get(url,opts,function(data){
+            resolve(data)
         })
+        .fail(()=>reject(id))
     })
     
-    $.get(url,opts,callback).fail(()=>{
-        console.log(`Tuvimos un probleme con el personaje ${id}`)
-    })
+    
         
 }
 
