@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cambiando el contexto al llamar a una funcion</title>
+</head>
+<body>
+    <script>
+    const sacha={
+        nombre:"Sacha",
+        apellido:"gomez"
+    }
+    function saludar(saludo="hola"){
+        console.log(`${saludo}, mi nombre es ${this.nombre}`)
+    }
+    // const saludarASacha=saludar.bind(sacha)
+    
+    // setTimeout(saludar.bind(sacha, "Hola parce"),1000)
+    
+    // saludar.call(sacha,"Que mas ve") Cuando usamso .call(el objeto,un parametro,otro parametro,...)
+    
+    saludar.apply(sacha,["hola che"])
+    // cuando usamos el .apply(el objeto, [un parametro,otro parametro,...])
+    </script>
+</body>
+</html>
